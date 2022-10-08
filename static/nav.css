@@ -1,0 +1,83 @@
+body{
+    background-color: #111827;
+}
+
+nav{
+    background-color: #111827;
+    color:#CBCCC9;
+}
+
+div.menu{
+    background-color: #111827;
+    color:#CBCCC9;
+}
+div.menu:hover ul.menu-dropdown{
+    visibility: visible;
+    height: 150px;
+    transition: all 0.3s ease;
+}
+ul.menu-dropdown{
+    background: #0b0f18;
+    transform: translate(-50%);
+    transition: all 0.1s ease;
+
+}
+/* div.menu-dropdown li.menu-dropdown-content{
+    /* margin: 5px 0; */*/
+a.dropdown-anchor{
+    font-family: "Poppins";
+    color: #CBCCC9;
+}
+a.dropdown-anchor:hover{
+    background-color: #000; 
+} 
+span.menu-content{
+    background-color:  #CBCCC9;
+}
+
+button.btn-primary{
+    background-color: #1F80E0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+form.search-form div.search-bar input {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #CBCCC9;
+    width: 250px;
+    
+    transition: all 0.2s ease;
+}
+form.search-form div.search-bar input:focus {
+    width: 300px;
+    border-bottom: 1px solid #1F80E0;
+}
+button.search-icon {
+    /* position: relative; */
+    /* right: 10px; */
+    cursor: pointer;
+    color: #CBCCC9;
+}
+
+ul.dropdown-child{
+  background: #0b0f18;
+  transform: translate(-50%);
+  transition: all 0.1s ease;
+}
+ul.dropdown-child a{
+    font-family: "Poppins";
+    color: #CBCCC9;
+}
+ul.dropdown-child li a:hover {
+    background-color: #000;
+  }
+li:hover ul.dropdown-child {
+    visibility: visible;
+    top: 40px;
+    transition: all 0.1s ease;
+  }
+
+
+

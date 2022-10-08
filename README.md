@@ -1,1 +1,0 @@
-# Hotstar-Clone-using-Django

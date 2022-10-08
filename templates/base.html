@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%}{% endblock %}-Disney+ Hotstar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static 'nav.css'%}">
+    <link rel="stylesheet" href="{% static 'bannercarousel.css'%}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <nav class="container font-medium mx-auto flex items-center justify-between py-4">
+        <div class="flex items-center">
+            <ul class = "flex items-center">
+                <!--menu p-2 space-y-1-->
+                <div class="relative inline-block text-center">
+                    <div class="peer menu p-2 space-y-1 visible">
+                        <span class="menu-content block w-4 h-px"></span>
+                        <span class="menu-content block w-4 h-px"></span>
+                        <span class="menu-content block w-4 h-px"></span>
+                        <ul class="menu-dropdown invisible ml-6 absolute h-0 flex-col w-40 rounded-md text-start overflow-hidden top-10 left-1/2">
+                            <li class=" ml-1.5 mr-0 block">
+                                <a class="dropdown-anchor text-normal text-xs block px-3 pt-2.5 pb-2.5" href="">Channels</a>
+                            </li>
+                            <li class=" ml-1.5 mr-0 block">
+                                <a class="dropdown-anchor text-normal text-xs block px-3 pt-2.5 pb-2.5" href="">Genres</a>
+                            </li>
+                            <li class=" ml-1.5 mr-0 block">  
+                                <a class="dropdown-anchor text-normal text-xs block px-3 pt-2.5 pb-2.5" href="">Languages</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    
+                </div>
+                  
+                <a class ="pb-2 pl-3 pr-0"href="/">
+                    <img src="{% static 'images/logo.svg' %}" alt="logo">
+                </a>
+
+                <!--dropdowns-->
+
+                <li class = "ml-6 relative"><a href="">TV</a>
+                    <ul class="dropdown-child absolute flex-col overflow-hidden invisible text-start top-20 left-1/2 w-40 rounded-md">
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5"href="">Other Shows</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5"href="">Hotstar Specials</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5"href="">Quix</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5"href="">Star Jalsha</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5"href="">Star Plus</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5"href="">Star Vijay</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5"href="">Star Bharat</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5"href="">Asianet</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5"href="">more...</a></li>
+                    </ul>
+                </li>
+                <li class = "ml-6 relative"><a href="">Movies</a>
+                    <ul class="dropdown-child absolute  flex-col overflow-hidden invisible text-start top-50 left-1/2 w-40 rounded-md">
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Odia</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Hindi</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Bengali</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Telugu</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Malayalam</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Tamil</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Marathi</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">English</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Kannada</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Korean</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Japanese</a></li>
+                    </ul>
+                </li>
+                <li class = "ml-6 relative"><a href="">Sports</a>
+                    <ul class="dropdown-child absolute  flex-col overflow-hidden invisible text-start top-50 left-1/2 w-40 rounded-md">
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Cricket</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Football</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Formula 1</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Kabaddi</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Hockey</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Formula E</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Marathi</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Martial arts</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Tennis</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Khelo India</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">American FootBall</a></li>
+                        <li><a class="block text-normal text-xs px-3 pt-2.5 pb-2.5" href="">Golf</a></li>
+                    </ul>
+                </li>
+                    <!--drowdowns-->
+                <li class = "ml-6">Disney+</li>
+                <li class = "ml-6">
+                    <a href="">
+                        <img src="{% static 'images/kids.svg'%}" alt="kids">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class ="pr-6">
+            <ul class = "flex items-center">
+                <form action="#" class="search-form">
+                    {% csrf_token %}
+                    <div class="search-bar">
+                        <input type="text" name="query" id="query" placeholder="Search" class="input-search text-md font-semibold"><button type="submit" class="search-icon relative right-2.5"><i class="fas fa-search" aria-hidden="true"></i></button>
+                    </div>
+                </form>
+                <button class = "btn-primary text-xs text-white font-extrabold rounded-md">
+                    <a class="px-4 pt-4 pb-4"href="">SUBSCRIBE</a></button>
+                <li class = "ml-6 text-sm">LOGIN</li>
+            </ul>
+        </div>
+    </nav>
+    <!--hero section-->
+    <section class = "hero bg-gray-800">
+        <carousel>
+            
+        </carousel>
+        
+    </section>
+</body>
+</html>
